@@ -1,7 +1,7 @@
 -- Granny script
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Granny multiplayer script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Granny multiplayer", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --player tab
 
@@ -114,7 +114,7 @@ GameTab:AddButton({
 GameTab:AddButton({
 	Name = "Gate Escape",
 	Callback = function()
-   game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(24, 10, -100))
+   game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(24, 10, -100)
    end
 })
 
