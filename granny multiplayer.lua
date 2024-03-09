@@ -1,4 +1,4 @@
---Granny multiplaye
+--granny
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Granny multiplayer", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
