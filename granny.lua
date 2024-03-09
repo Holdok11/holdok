@@ -111,6 +111,13 @@ GameTab:AddButton({
    end
 })
 
+GameTab:AddButton({
+	Name = "Gate Escape",
+	Callback = function()
+   game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(24, 10, -100))
+   end
+})
+
 --creator tab
 
 local CreatorTab = Window:MakeTab({
