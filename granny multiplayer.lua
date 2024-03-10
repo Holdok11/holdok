@@ -58,6 +58,11 @@ GameTab:AddButton({
    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-98, 60, -34)
   	end    
 })
+GameTab:AddButton({
+	Name = "Sewer Escape",
+	game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-343, -15, 34)
+  	end    
+})
 
 --ending tab two
 
