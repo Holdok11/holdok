@@ -1,7 +1,7 @@
 --holdok
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "для себя", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --player tab
 
@@ -41,21 +41,21 @@ ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status 
 })
 
 PlayerTab:AddButton({
-	Name = "deks",
+	Name = "Dex",
 	Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
   	end    
 })
 
 PlayerTab:AddButton({
-	Name = "inf eld",
+	Name = "Inf eld",
 	Callback = function()
    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
   	end    
 })
 
 PlayerTab:AddButton({
-	Name = "fly",
+	Name = "Fly",
 	Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
   	end    
