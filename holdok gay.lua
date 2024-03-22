@@ -1,6 +1,10 @@
-local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
- 
-local PhantomForcesWindow = Library:NewWindow("Holdok gey")
+getgenv().Config = {
+    Click = false
+}
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Holdok gay")
  
 local KillingCheats = PhantomForcesWindow:NewSection("Player")
  
@@ -18,6 +22,12 @@ end)
 
 KillingCheats:CreateButton("Keyboard", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+local KillingCheats = PhantomForcesWindow:NewSection("Games")
+
+KillingCheats:CreateButton("Car Dealership Tycoon", function()
+    loadstring(game:HttpGet("https://ahsrua.com"))()
 end)
 
 local KillingCheats = PhantomForcesWindow:NewSection("Esp")
