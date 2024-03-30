@@ -16,8 +16,12 @@ KillingCheats:CreateButton("Inf eld", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
 
-KillingCheats:CreateButton("Dex", function()
+KillingCheats:CreateButton("Dark Dex", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
+
+KillingCheats:CreateButton("Dex", function()
+loadstring(game:HttpGet("https://github.com/Hosvile/DEX-Explorer/releases/latest/download/main.lua", true))()
 end)
 
 KillingCheats:CreateButton("Rspy", function()
