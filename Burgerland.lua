@@ -19,6 +19,10 @@ game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFram
     end)
 end)
 
+MainSection:CreateButton("Infinity Eld", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
 local MainSection = Window:NewSection("Misc")
 
 MainSection:CreateButton("Anti Afk", function()
