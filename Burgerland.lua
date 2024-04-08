@@ -3,17 +3,18 @@ getgenv().Config = {
 }
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
-local Window = Library:NewWindow("Бургерленд")
+local Window = Library:NewWindow("Burgerland")
 
 local MainSection = Window:NewSection("Main")
 
-MainSection:CreateToggle("Auto tp", function(state)
+MainSection:CreateToggle("Auto Tp", function(state)
     task.spawn(function()
         Config.Click = state
         while true do
             if not Config.Click then return end
             
 game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1626, 388, 1160)task.wait(.1)
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1626, 388, 1152)task.wait(.2)
         end
     end)
 end)
