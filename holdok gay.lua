@@ -1,41 +1,33 @@
+--Этот скрипт будет всегда с открытом кодом
 getgenv().Config = {
     Holdok = false
 }
-
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
-
-local PhantomForcesWindow = Library:NewWindow("Holdok gay")
- 
-local KillingCheats = PhantomForcesWindow:NewSection("Player Scripts")
- 
-KillingCheats:CreateButton("Fly", function()
+local Window = Library:NewWindow("Holdok gay")
+local MainSection = Window:NewSection("Player Scripts")
+MainSection:CreateButton("Fly", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 end)
-
-KillingCheats:CreateButton("Inf eld", function()
+MainSection:CreateButton("Inf Eld", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
-
-KillingCheats:CreateButton("Rspy", function()
+MainSection:CreateButton("Rspy", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
 end)
-
-KillingCheats:CreateButton("Keyboard", function()
+MainSection:CreateButton("Keyboard", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
-
-local KillingCheats = PhantomForcesWindow:NewSection("Dex")
-
-KillingCheats:CreateButton("Dark Dex", function()
+local MainSection = Window:NewSection("More Dex")
+MainSection:CreateButton("Dark Dex", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 end)
-
-KillingCheats:CreateButton("Dex", function()
+MainSection:CreateButton("Dex Fix", function()
 loadstring(game:HttpGet("https://github.com/Hosvile/DEX-Explorer/releases/latest/download/main.lua", true))()
 end)
-
-local KillingCheats = PhantomForcesWindow:NewSection("Games")
-
-KillingCheats:CreateButton("Car Dealership Tycoon", function()
+local MainSection = Window:NewSection("Games")
+MainSection:CreateButton("Car Dealership Tycoon", function()
     loadstring(game:HttpGet("https://ahsrua.com"))()
+end)
+MainSection:CreateButton("Doors And More Games", function()
+    loadstring(game:HttpGet('https://rawscripts.net/raw/DOORS-FFJ-Hub-11365'))()
 end)
