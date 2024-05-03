@@ -1,7 +1,5 @@
 --Этот скрипт будет всегда с открытом кодом
-getgenv().Config = {
-    Holdok = false
-}
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
 local Window = Library:NewWindow("Holdok gay")
 local MainSection = Window:NewSection("Player Scripts")
@@ -11,13 +9,23 @@ end)
 MainSection:CreateButton("Inf Eld", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
-MainSection:CreateButton("Rspy", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
-end)
 MainSection:CreateButton("Keyboard", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
-local MainSection = Window:NewSection("More Dex")
+local MainSection = Window:NewSection("Rspy")
+MainSection:CreateButton("hydroxide Fix", function()
+   local owner = "Hosvile"
+    local branch = "revision"
+     local function webImport(file)
+      return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/MC-Hydroxide/%s/%s.lua"):format(owner, branch, file)), file .. '.lua')()
+end
+webImport("init")
+webImport("ui/main")
+end)
+MainSection:CreateButton("Rspy Fix", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/RS/main/SimpleSpyMobile"))()
+end)
+local MainSection = Window:NewSection("Dex")
 MainSection:CreateButton("Dark Dex", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 end)
