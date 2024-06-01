@@ -16,6 +16,9 @@ MainSection:CreateButton("Auto clicker", function()
 getgenv().key = "Hostile"
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/The-telligence/main/MC%20KSystem%202"))()
 end)
+MainSection:CreateButton("Hub Scripts)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/artemy133563/Utilities/main/WyvernV2",true))()
+end)
 local MainSection = Window:NewSection("Rspy")
 MainSection:CreateButton("hydroxide Fix", function()
    local owner = "Hosvile"
